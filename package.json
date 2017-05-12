@@ -1,0 +1,23 @@
+{
+  "name": "amyda",
+  "version": "1.0.0",
+  "description": "Amyda - set of styles and elements for dashboard development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Popov Gennadiy <commerce@westtrade.tk> (http://westtrade.tk/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.28.1",
+    "karma": "^1.7.0",
+    "mocha": "^3.3.0",
+    "sinon": "^2.2.0",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1"
+  }
+}
