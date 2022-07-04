@@ -1,0 +1,26 @@
+
+/*
+TODO 
+xs, sm, base, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl, 9xl
+*/
+
+.button{
+    @apply inline-flex flex-col justify-center items-center;
+    @apply rounded-full;
+    @apply py-4 px-8;
+    @apply cursor-pointer;
+    @apply bg-blue-900;
+    @apply h-16 box-border w-52;
+    @apply font-semibold text-base leading-7 text-gray-50;
+    @apply transition-all;
+
+    @apply hover:bg-blue-800;
+    @apply focus:bg-blue-400 focus:outline focus:outline-8;
+    @apply active:bg-black ;
+    @apply disabled:bg-blue-200 ;
+}
+
+
+.button-lg {
+
+}

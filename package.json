@@ -1,0 +1,38 @@
+{
+	"name": "amyda",
+	"version": "0.0.1",
+	"main": "index.js",
+	"author": "Gennadiy Popov <gpopov@ipolecat.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.18.6",
+		"@storybook/addon-actions": "^6.5.9",
+		"@storybook/addon-essentials": "^6.5.9",
+		"@storybook/addon-interactions": "^6.5.9",
+		"@storybook/addon-links": "^6.5.9",
+		"@storybook/builder-vite": "^0.1.38",
+		"@storybook/html": "^6.5.9",
+		"@storybook/testing-library": "^0.0.13",
+		"autoprefixer": "^10.4.7",
+		"babel-loader": "^8.2.5",
+		"babel-preset-solid": "^1.4.6",
+		"classnames": "^2.3.1",
+		"postcss": "^8.4.14",
+		"solid-js": "^1.4.6",
+		"storybook-addon-pseudo-states": "^1.15.1",
+		"stylus": "^0.58.1",
+		"tailwind": "^4.0.0",
+		"tailwindcss": "^3.1.4",
+		"typescript": "^4.5.4",
+		"vite": "^2.9.13",
+		"vite-plugin-babel": "^1.1.0",
+		"vite-plugin-solid": "^2.2.6"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	}
+}
