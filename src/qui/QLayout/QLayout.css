@@ -1,0 +1,15 @@
+.q-layout {
+    @apply container flex flex-row  mx-auto p-4 gap-4;
+
+    &__left {
+        @apply  w-64 grow-0 shrink-0;
+    }
+
+    &__right {
+        @apply  grow shrink;
+    }
+
+    & + .q-layout {
+        @apply pt-0;
+    }
+}

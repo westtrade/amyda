@@ -1,0 +1,2 @@
+import{i as e,a as d,b as o,t as r}from"./web.a6138b5f.js";import{c as m}from"./clsx.m.256e9345.js";const x=r('<div><div class="q-layout__left"></div><div class="q-layout__right"></div></div>'),u=t=>(()=>{const a=x.cloneNode(!0),i=a.firstChild,l=i.nextSibling;return e(i,()=>t.left),e(l,()=>t.right),d(()=>o(a,m("q-layout",t.class))),a})();export{u as Q};
+//# sourceMappingURL=QLayout.ddb2be3f.js.map

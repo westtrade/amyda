@@ -1,4 +1,3 @@
-import { Meta } from "@storybook/html";
 import { Story } from "@storybook/store";
 import { Button, ButtonProps } from "./Button";
 

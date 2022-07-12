@@ -1,2 +1,0 @@
-import{r as a}from"./web.4f37df11.js";const n={actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}}};let e;const s=[o=>{e&&e();const r=document.getElementById("root"),t=document.createElement("div");return t.setAttribute("id","solid-root"),r.appendChild(t),e=a(o,t),t}];export{s as decorators,n as parameters};
-//# sourceMappingURL=preview.9d7dc7be.js.map

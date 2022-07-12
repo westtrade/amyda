@@ -35,5 +35,9 @@
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
 		"deploy-storybook": "./scripts/deploy-sb.sh"
+	},
+	"dependencies": {
+		"clsx": "^1.2.1",
+		"nanopop": "^2.1.0"
 	}
 }
