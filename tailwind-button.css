@@ -1,0 +1,136 @@
+/* Tailwind CSS Button Component */
+
+/* Base button styles */
+.btn {
+  @apply inline-block px-6 py-3 rounded-lg font-medium text-center no-underline cursor-pointer transition-all duration-300 ease-in-out transform;
+}
+
+/* Primary button variant */
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:bg-blue-800;
+}
+
+/* Secondary button variant */
+.btn-secondary {
+  @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 active:bg-gray-800;
+}
+
+/* Success button variant */
+.btn-success {
+  @apply bg-green-600 text-white hover:bg-green-700 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 active:bg-green-800;
+}
+
+/* Danger button variant */
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700 focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 active:bg-red-800;
+}
+
+/* Warning button variant */
+.btn-warning {
+  @apply bg-yellow-500 text-white hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 active:bg-yellow-700;
+}
+
+/* Info button variant */
+.btn-info {
+  @apply bg-cyan-600 text-white hover:bg-cyan-700 focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 active:bg-cyan-800;
+}
+
+/* Outline button variant */
+.btn-outline {
+  @apply border-2 border-current hover:bg-transparent hover:text-current;
+}
+
+.btn-outline-primary {
+  @apply btn-outline text-blue-600 border-blue-600 hover:bg-blue-50;
+}
+
+.btn-outline-secondary {
+  @apply btn-outline text-gray-600 border-gray-600 hover:bg-gray-50;
+}
+
+.btn-outline-success {
+  @apply btn-outline text-green-600 border-green-600 hover:bg-green-50;
+}
+
+.btn-outline-danger {
+  @apply btn-outline text-red-600 border-red-600 hover:bg-red-50;
+}
+
+/* Disabled button */
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed pointer-events-none;
+}
+
+/* Small button */
+.btn-sm {
+  @apply px-4 py-2 text-sm rounded-md;
+}
+
+/* Large button */
+.btn-lg {
+  @apply px-8 py-4 text-lg rounded-xl;
+}
+
+/* Pill button */
+.btn-pill {
+  @apply rounded-full;
+}
+
+/* Ghost button */
+.btn-ghost {
+  @apply bg-transparent text-current hover:bg-gray-100;
+}
+
+/* Link button */
+.btn-link {
+  @apply bg-transparent text-blue-600 hover:text-blue-800 underline;
+}
+
+/* Ripple effect for buttons */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+
+.btn-ripple:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Button with icon */
+.btn-icon {
+  @apply flex items-center justify-center gap-2;
+}
+
+/* Button with loading state */
+.btn-loading {
+  @apply flex items-center justify-center gap-2 pointer-events-none;
+}
+
+/* Animation for loading spinner */
+.btn-spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
