@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Buttons Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Include our custom button styles */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            outline: none;
+        }
+
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background-color: #4b5563;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #374151;
+        }
+
+        .btn-success {
+            background-color: #16a34a;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #15803d;
+        }
+
+        .btn-danger {
+            background-color: #dc2626;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: #b91c1c;
+        }
+
+        .btn-warning {
+            background-color: #f59e0b;
+            color: white;
+        }
+
+        .btn-warning:hover {
+            background-color: #d97706;
+        }
+
+        .btn-info {
+            background-color: #0891b2;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background-color: #0e7490;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid currentColor;
+        }
+
+        .btn-outline-primary {
+            color: #2563eb;
+            border-color: #2563eb;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #eff6ff;
+        }
+
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+
+        .btn-lg {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+        }
+
+        .btn-pill {
+            border-radius: 9999px;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Tailwind CSS Button Components</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Solid Buttons -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Solid Buttons</h2>
+                <div class="space-y-4">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-success">Success Button</button>
+                    <button class="btn btn-danger">Danger Button</button>
+                    <button class="btn btn-warning">Warning Button</button>
+                    <button class="btn btn-info">Info Button</button>
+                </div>
+            </div>
+
+            <!-- Outline Buttons -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Outline Buttons</h2>
+                <div class="space-y-4">
+                    <button class="btn btn-outline btn-outline-primary">Primary Outline</button>
+                    <button class="btn btn-outline btn-outline-secondary">Secondary Outline</button>
+                    <button class="btn btn-outline btn-outline-success">Success Outline</button>
+                    <button class="btn btn-outline btn-outline-danger">Danger Outline</button>
+                    <button class="btn btn-outline btn-outline-warning">Warning Outline</button>
+                    <button class="btn btn-outline btn-outline-info">Info Outline</button>
+                </div>
+            </div>
+
+            <!-- Size Variations -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Size Variations</h2>
+                <div class="space-y-4">
+                    <button class="btn btn-primary btn-sm">Small Button</button>
+                    <button class="btn btn-primary">Normal Button</button>
+                    <button class="btn btn-primary btn-lg">Large Button</button>
+                </div>
+            </div>
+
+            <!-- Special Styles -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Special Styles</h2>
+                <div class="space-y-4">
+                    <button class="btn btn-primary btn-pill">Pill Button</button>
+                    <button class="btn btn-ghost">Ghost Button</button>
+                    <button class="btn btn-link">Link Button</button>
+                    <button class="btn btn-primary" disabled>Disabled Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
